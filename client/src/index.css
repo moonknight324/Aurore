@@ -1,0 +1,31 @@
+/* Scrollbar styles for WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff; /* Background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333333; /* Darker color when hovered */
+}
+
+/* Scrollbar styles for Firefox */
+html {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #1c1b1b #707474; /* Color scheme: thumb color and track color */
+}
+
+
+/* Optional: If you want to style the scrollbar on a specific element */
+.your-scrollable-element {
+    overflow-y: auto; /* Ensure the element is scrollable */
+    scrollbar-width: thin; /* Adjust the scrollbar width */
+    scrollbar-color: #000000 #ffffff; /* Adjust scrollbar colors */
+}

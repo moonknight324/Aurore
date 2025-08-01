@@ -1,0 +1,85 @@
+svg {
+    width: 25px;
+  }
+  
+  .header {
+    background: rgba(0, 0, 0, 0.377);
+    color: #e1dbdb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    font-size: 24px;
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-weight: bold;
+  }
+  
+  
+  .menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+  }
+
+.dropdownBox{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* color: black; */
+    /* text-align: center; */
+}
+
+.menubox{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: bisque; */
+    color: black;
+    /* width: 200px; */
+    
+}
+
+.menubox ul{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 2%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #e1dbdb;
+    color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+ul li{
+    display: grid;
+    z-index: 200;
+}
+
+
+
+ a {
+    text-decoration: none;
+    color: #e1dbdb;
+    display: block;
+}
+
+ul a Link {
+    text-decoration: none;
+    color: #e1dbdb;
+    display: block;
+}
