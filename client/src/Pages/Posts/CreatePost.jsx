@@ -40,7 +40,7 @@ const CreatePost = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/posts/register",
+        "https://aurore-latest.onrender.com/posts/register",
         formData,
         config
       );
@@ -112,7 +112,7 @@ const CreatePost = () => {
                 onChange={handleFileChange}
                 required
               />
-             
+
             </div>
           </div>
           <button

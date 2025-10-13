@@ -3,9 +3,9 @@ import styles from "../Styles/MainNav.module.css";
 import { Link } from "react-router-dom";
 
 function MainNav() {
-    const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const logout = () => {
-    window.open("http://localhost:5000/logout", "_self");
+    window.open("https://aurore-latest.onrender.com/logout", "_self");
     setDropdownOpen(false);
   };
   return (
@@ -14,8 +14,8 @@ function MainNav() {
         <div className={styles.logo}>AURORE</div>
         <div className={styles.search}>
           <ul className={styles.menu}>
-            
-          <li><Link to={"/create-post"}> <a> Create Post</a></Link></li>
+
+            <li><Link to={"/create-post"}> <a> Create Post</a></Link></li>
             {/* <li>Posts</li> */}
             <li>
               {" "}

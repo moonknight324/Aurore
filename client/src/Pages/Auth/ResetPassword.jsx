@@ -34,7 +34,7 @@ const ResetPassword = () => {
     try {
       // Make API call to reset password
       const response = await fetch(
-        `http://localhost:5000/api/user/reset-password/${id}/${token}`,
+        `https://aurore-latest.onrender.com/api/user/reset-password/${id}/${token}`,
         {
           method: "POST",
           headers: {
@@ -85,7 +85,7 @@ const ResetPassword = () => {
         <button className="btn" onClick={resetPassword} disabled={loading}>
           Reset Password
         </button>
-        {message && <p style={{textAlign: "center",marginTop: "15px"}}>{message}</p>}
+        {message && <p style={{ textAlign: "center", marginTop: "15px" }}>{message}</p>}
       </div>
     </div>
   );

@@ -135,7 +135,7 @@ class userController {
         const token = jwt.sign({ userID: user._id }, secret, {
           expiresIn: "1h",
         });
-        const link = `http://localhost:3000/reset/${user._id}/${token}`; //frontend link and port is of frontend
+        const link = `https://aurore.pages.dev//reset/${user._id}/${token}`; //frontend link and port is of frontend
         console.log(link);
         //Send Email
         let info = await transporter.sendMail({

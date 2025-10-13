@@ -24,22 +24,22 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   // Function to update authenticated state from LoginForm
-  
+
 
   useEffect(() => {
     const checkAuth = async () => {
       try {
         const token = localStorage.getItem("token");
         const headers = token ? { Authorization: `Bearer ${token}` } : {};
-        
+
         const res = await axios.get(
-          "http://localhost:5000/api/auth/status",
+          "https://aurore-latest.onrender.com/api/auth/status",
           {
             headers,
             withCredentials: true, // Include cookies for session-based auth
           }
         );
-        
+
         if (res.status === 200 && res.data.status === "success") {
           navigate("/main"); // Redirect to main if authenticated
         }
