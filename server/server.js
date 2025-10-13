@@ -36,7 +36,7 @@ app.get("/", async (req, res) => {
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://aurore.pages.dev",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
@@ -60,7 +60,7 @@ passport.use(
     {
       clientID: clientId,
       clientSecret: clientsecret,
-      callbackURL: "/auth/google/callback", 
+      callbackURL: "/auth/google/callback",
       scope: ["profile", "email"],
     },
     async (accessToken, refreshToken, profile, done) => {
@@ -101,8 +101,8 @@ app.get(
 app.get(
   "/auth/google/callback",
   passport.authenticate("google", {
-    successRedirect: "http://localhost:3000/main",
-    failureRedirect: "http://localhost:3000/login",
+    successRedirect: "https://aurore.pages.dev/main",
+    failureRedirect: "https://aurore.pages.dev/login",
   })
 );
 
@@ -160,7 +160,7 @@ app.get("/logout", (req, res, next) => {
     if (error) {
       return next(error);
     }
-    res.redirect("http://localhost:3000");
+    res.redirect("https://aurore.pages.dev");
   });
 });
 

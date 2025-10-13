@@ -24,7 +24,7 @@ function UserPosts() {
 
   const getUserData = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/posts/getdata", {
+      const res = await axios.get("https://aurore-latest.onrender.com/posts/getdata", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -43,7 +43,7 @@ function UserPosts() {
 
   const handleDelete = async (postId) => {
     try {
-      await axios.delete(`http://localhost:5000/posts/delete/${postId}`);
+      await axios.delete(`https://aurore-latest.onrender.com/posts/delete/${postId}`);
       getUserData();
     } catch (error) {
       console.error("Error deleting post:", error);

@@ -8,7 +8,7 @@ function ForgotPasswordForm() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/user/send-reset-password-email",
+        "https://aurore-latest.onrender.com/api/user/send-reset-password-email",
         { email }
       );
       alert(response.data.message);
@@ -32,7 +32,7 @@ function ForgotPasswordForm() {
               required
             />
           </div>
-            <button className="btn" type="submit">Send Reset Link</button>
+          <button className="btn" type="submit">Send Reset Link</button>
         </form>
       </div>
     </div>

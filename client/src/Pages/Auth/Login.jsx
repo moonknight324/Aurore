@@ -21,7 +21,7 @@ function LoginForm({ updateAuthenticated }) {
   const handlelogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/user/login", {
+      const res = await axios.post("https://aurore-latest.onrender.com/api/user/login", {
         email,
         password,
       });
@@ -65,7 +65,7 @@ function LoginForm({ updateAuthenticated }) {
 
 
   const loginwithgoogle = () => {
-    window.open("http://localhost:5000/auth/google/callback", "_self");
+    window.open("https://aurore-latest.onrender.com/auth/google/callback", "_self");
   };
 
   return (
@@ -89,7 +89,7 @@ function LoginForm({ updateAuthenticated }) {
               required
               onChange={(e) => setPassword(e.target.value)}
             />
-            <i  onClick={handleShowPassword}>{passwordIcon}</i>
+            <i onClick={handleShowPassword}>{passwordIcon}</i>
           </div>
           <div className="remember-forgot">
             <Link to={"/forgotPassword"}>

@@ -110,7 +110,7 @@ A comprehensive space exploration application that captivates space enthusiasts,
 
 5. **Access the application**
    - Frontend: http://localhost:3000
-   - Backend: http://localhost:5000
+   - Backend: https://aurore-latest.onrender.com
 
 ## 📁 Project Structure
 

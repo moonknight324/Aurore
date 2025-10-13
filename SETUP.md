@@ -24,7 +24,7 @@ Before you begin, ensure you have the following installed:
 3. Enable Google+ API
 4. Create OAuth 2.0 credentials
 5. Add authorized redirect URIs:
-   - `http://localhost:5000/auth/google/callback` (development)
+   - `https://aurore-latest.onrender.com/auth/google/callback` (development)
    - `https://your-domain.com/auth/google/callback` (production)
 
 ### 3. NASA API (Optional)
@@ -96,5 +96,5 @@ npm run dev
 ```
 
 ### 5. Verify Installation
-- Backend: http://localhost:5000 (should show "Server is up and running")
-- Frontend: http://localhost:3000 (should load the application)
+- Backend: https://aurore-latest.onrender.com (should show "Server is up and running")
+- Frontend: https://aurore.pages.dev (should load the application)
